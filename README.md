@@ -106,7 +106,12 @@
 
 * 點擊清除按鈕會直接執行 `MyCanvas.Children.Clear()` 一鍵清空所有圖形。
 
+4. **動態游標與狀態同步**
 
+* 滑鼠進入畫布 (`MouseEnter`) 或按下時，會自動切換游標樣式（如 `Cursors.Pen`、`Cursors.Cross`、`Cursors.Hand`），提升使用者體驗。
+
+
+* 透過 `DisplayStatus()` 共用函式，隨時將選取的色彩、粗細、形狀與座標同步更新至底部的狀態列。
 
 
 4. **動態游標與狀態同步**
